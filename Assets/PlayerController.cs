@@ -19,12 +19,14 @@ public class PlayerController : NetworkBehaviour
     public GameObject nozzleLink;
     public AudioSource engineSound;
     public AudioSource hitSound;
+    public float maxDiameter = 15f;
 
     // Use this for initialization
     void Start()
     {
         rbd = GetComponent<Rigidbody2D>();
 
+        rbd.transform.position = new Vector3(Random.Range(-maxDiameter * 0.6f, maxDiameter*0.6f) , Random.Range(-maxDiameter * 0.6f, maxDiameter * 0.6f), 0f);
         // only do this for my own player/ship
         if (isLocalPlayer)
         {

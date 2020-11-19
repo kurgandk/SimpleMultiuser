@@ -5,8 +5,6 @@ ScriptsOnlyBuild:
     - bulletScript
     Mirror.Components.dll:
     - Mirror.NetworkTransform
-    Mirror.Editor.dll:
-    - Mirror.NetworkBehaviourInspector
     Mirror.dll:
     - Mirror.NetworkIdentity
     - Mirror.NetworkManager
@@ -851,7 +849,7 @@ ScriptsOnlyBuild:
     className: NetworkLogSettings
   - hash:
       serializedVersion: 2
-      Hash: 3e3bc2f4ff0c9d98496a9867803808b9
+      Hash: 0a7cc9ec0b04463c3c4fff26a0502f52
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
